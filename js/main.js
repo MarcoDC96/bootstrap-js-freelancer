@@ -25,8 +25,13 @@ function calculateOffer(event) {
 
     else if (userDiscount.length >= 1 && !discountCodes.includes(userDiscount)) {
         document.getElementById("discountError").classList.remove("d-none");
-        return false;
     }
+
+    else{
+        prezzo;
+    }
+
+    
 
     document.getElementById("priceId").innerHTML = "The Price is: " + prezzo.toFixed(2) + " €";
     document.getElementById("hoursId").innerHTML = "Hours requested: " + userHours;
