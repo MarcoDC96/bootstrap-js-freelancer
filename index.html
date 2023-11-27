@@ -111,9 +111,9 @@
     <!-- inizio section offer-->
     
     <section id="offer" class="bg-info">
-      <div class="container p-4">
+      <div id="offerForm" class="container p-4">
         <h2 class="text-center text-uppercase">Want an offer?</h2>
-        <form id="offerForm" class="row gy-2 my-3" onsubmit="calculateOffer(event)">
+        <form class="row gy-2 my-3" onsubmit="calculateOffer(event)">
           <!-- First name input-->
           <div class="col-sm-6 col-12">
             <label class="form-label" for="first-name">First name</label>
@@ -148,6 +148,7 @@
           <div class="col-sm-6 col-12">
             <label class="form-label" for="phone">Discount Code</label>
             <input class="form-control" id="discount-code" type="text" />
+            <h6 id="discountError" class="d-none text-danger">Ritenta</h6>
           </div>
           <!-- Message input-->
           <div class="col-12">
@@ -165,6 +166,12 @@
         </form>
       </div>
     </section>
+    <div id="finalContainer" class=" container-fluid bg-info text-center p-1">
+        <h2>Your offer is:</h2>
+        <h5 id="hoursId"></h5>
+        <h5 id="workId"></h5>
+        <h5 id="priceId"></h5>
+    </div>
     <!-- fine section offer-->
   </main>
   <!-- fine main -->
@@ -197,3 +204,4 @@
 </body>
 
 </html>
+d-none
