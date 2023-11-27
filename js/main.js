@@ -7,6 +7,7 @@ function calculateOffer(event) {
     let userDiscount = document.getElementById("discount-code").value;
 
     let prezzo = 0;
+    prezzo = parseFloat(prezzo);
     if (typeWork == "backend") {
         prezzo = userHours * 20.5;
         typeWork = "Backend Development"
@@ -26,9 +27,6 @@ function calculateOffer(event) {
         document.getElementById("discountError").classList.remove("d-none");
         return false;
     }
-
-    document.getElementById("offerForm").value;
-    document.getElementById("finalContainer").value;
 
     document.getElementById("priceId").innerHTML = "The Price is: " + prezzo.toFixed(2) + " €";
     document.getElementById("hoursId").innerHTML = "Hours requested: " + userHours;
